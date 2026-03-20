@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const projectId = card.dataset.projectId;
             let content = "";
 
-            if (projectId === "rastreio") {
-                content = "<h3>Sistema de Rastreamento</h3><p>Detalhamento do projeto: Conexão com API de correios em tempo real utilizando React Hooks e TypeScript para gerenciamento de estado blindado. Inclui autenticação e painel de histórico.</p>";
+            if (projectId === "carmini") {
+                content = "<h3>Carmini</h3><p>Detalhamento do projeto: Desenvolvimento do site Carmini, um e-commerce de skincare de luxo, com foco em performance, responsividade e SEO.</p><p><a href='https://carmini.co/' target='_blank'>Visitar o site</a></p>";
+            } else if (projectId === "rastreio") {
+                content = "<h3>Sistema de Rastreamento Simplificado</h3><p>Detalhamento do projeto: Conexão com API de correios em tempo real utilizando React Hooks e TypeScript para gerenciamento de estado blindado.</p>";
             } else if (projectId === "ecommerce") {
                 content = "<h3>Clone de E-commerce Premium</h3><p>Detalhamento do projeto: Recriação da interface de uma loja de alta conversão. Foco em performance, layout responsivo e transições suaves de imagem utilizando bibliotecas de animação.</p>";
-            } else if (projectId === "sitegrande") {
-                content = "<h3>Website Institucional Grande</h3><p>Detalhamento do projeto: Meu último grande projeto como freelancer. Arquitetura de front-end escalável para gerenciar múltiplos componentes e dados institucionais, com foco em SEO e acessibilidade.</p>";
             }
 
             modalDetails.innerHTML = content;
@@ -31,4 +31,4 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none";
         }
     });
-});
+})

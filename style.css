@@ -80,6 +80,10 @@ section {
     border-radius: 50%;
 }
 
+.hero-image.large-gif img {
+    max-width: 500px;
+}
+
 .hero-content h1 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
@@ -117,6 +121,14 @@ section {
     transform: rotate(180deg);
     color: rgba(245, 245, 245, 0.05);
     margin: 0;
+}
+
+.small-section {
+    padding: 3rem 4rem;
+}
+
+.vertical-text.small-text {
+    font-size: 3rem;
 }
 
 .job-item {
@@ -206,6 +218,12 @@ section {
 .bg-1 { background-color: #222; }
 .bg-2 { background-color: #333; }
 .bg-3 { background-color: #2a2a2a; }
+.bg-carmini { background-color: #000; }
+
+.project-logo {
+    max-width: 100px;
+    height: auto;
+}
 
 .project-card h3 {
     font-family: var(--font-heading);
@@ -220,11 +238,35 @@ section {
     font-weight: 300;
 }
 
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.section-header .center-text {
+    margin-bottom: 1rem;
+}
+
+.section-graphic img {
+    max-width: 100px;
+    height: auto;
+}
+
 #contato {
     background-color: var(--card-color);
     color: var(--accent);
     text-align: center;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-graphic img {
+    max-width: 100px;
+    margin-bottom: 2rem;
 }
 
 .cta {
@@ -301,8 +343,12 @@ footer {
         font-size: 3rem;
     }
 
-    .hero-content h1 {
+    .vertical-text.small-text {
         font-size: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
     }
     
     header {
