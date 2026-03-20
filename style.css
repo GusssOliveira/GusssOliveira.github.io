@@ -2,10 +2,10 @@
     --bg-color: #111111;
     --card-color: #1a1a1a;
     --text-color: #f5f5f5;
-    --light-text: #6b6b6b;
-    --accent: #d3c3b1;
-    --font-heading: 'Lora', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --light-text: #8c7b69;
+    --accent: #d4a373;
+    --font-heading: 'Unbounded', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --transition: 0.3s ease;
 }
 
@@ -26,15 +26,13 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    transition: color 0.3s;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.1);
+    padding: 2rem 4rem;
 }
 
 .logo {
@@ -43,242 +41,228 @@ header {
     font-weight: 700;
 }
 
-header nav ul {
+nav ul {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     list-style: none;
 }
 
-header nav a {
-    font-size: 0.75rem;
+nav a {
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
+    transition: var(--transition);
 }
 
-header nav a:hover {
-    color: var(--accent);
+nav a:hover {
+    color: var(--light-text);
 }
 
 section {
-    padding: 100px 50px;
-    max-width: 1400px;
+    padding: 6rem 4rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    min-height: 60vh;
+    gap: 4rem;
+    min-height: 70vh;
 }
 
-#hero h1 {
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
 }
 
-#hero p {
-    font-size: 1.1rem;
-    margin-top: 25px;
-    color: var(--light-text);
-    max-width: 700px;
-}
-
-#hero img {
-    max-width: 350px;
-    border-radius: 20px;
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .split-section {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 50px;
+    grid-template-columns: 200px 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 4rem;
 }
 
 .vertical-text {
     font-family: var(--font-heading);
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.03);
+    text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    text-align: right;
+    color: rgba(245, 245, 245, 0.05);
+    margin: 0;
 }
 
 .job-item {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .timeline {
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     color: var(--accent);
-    margin-bottom: 10px;
 }
 
 .institution {
     font-family: var(--font-heading);
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .description {
-    font-size: 1rem;
-    color: var(--light-text);
+    font-size: 1.1rem;
     max-width: 800px;
-}
-
-.idiomas-nested {
-    margin-top: 3rem;
-    border-top: 1px solid rgba(245, 245, 245, 0.1);
-    padding-top: 2rem;
-}
-
-.idiomas-nested h1 {
-    font-size: 0.8rem !important;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    color: var(--light-text);
 }
 
 .sub-heading {
     font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 2px;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
     margin-top: 3rem;
+    color: var(--accent);
 }
 
-.courses ul li {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    font-weight: 300;
+.interactive-list {
+    list-style: none;
 }
 
-#projetos h1 {
+.interactive-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: var(--light-text);
+}
+
+.center-text {
     font-family: var(--font-heading);
-    font-size: 3rem !important;
+    font-size: 3rem;
     text-align: center;
-    justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-.project-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 2rem;
+    width: 100%;
 }
 
 .project-card {
     background-color: var(--card-color);
-    padding: 50px 30px;
-    border-radius: 15px;
-    border: 1px solid rgba(245, 245, 245, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    border: 1px solid rgba(245, 245, 245, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .clickable-card {
     cursor: pointer;
-    transition: transform 0.3s, border-color 0.3s;
 }
 
 .clickable-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     border-color: var(--accent);
 }
 
-.carmini-img-container {
-    position: relative;
+.card-image {
     width: 100%;
     height: 180px;
-    margin-bottom: 1.5rem;
     border-radius: 4px;
-    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.bg-carmini {
     background-color: #000;
 }
 
-.carmini-img-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.github-icon-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.4s ease;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background-color: #1a1a1a;
+    color: rgba(245, 245, 245, 0.2);
 }
-
-.img-hover { opacity: 0; }
-.carmini-img-container:hover .img-default { opacity: 0; }
-.carmini-img-container:hover .img-hover { opacity: 1; }
 
 .project-card h3 {
     font-family: var(--font-heading);
     font-size: 1.2rem;
-    font-weight: 400;
-    margin: 0;
-    color: var(--text-color);
+    margin-bottom: 0.5rem;
 }
 
 .project-card p {
     color: var(--light-text);
     font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 10px;
 }
 
-.portfolio-footer-graphic {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+.portfolio-gif-container {
     width: 100%;
+    margin-top: 2rem;
 }
 
-.portfolio-footer-graphic img {
+.portfolio-gif-container img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    display: block;
+    border-radius: 8px;
 }
 
 #contato {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
     text-align: center;
-    background-color: var(--card-color);
-    color: var(--accent);
-    align-items: center;
+    padding: 6rem 4rem;
+}
+
+.contact-gif-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .contact-gif-container img {
     max-width: 250px;
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
 }
 
 .cta {
-    font-size: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto 3rem;
     font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .contact-links {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .contact-links a {
-    font-size: 1rem;
-    color: var(--text-color);
-    font-weight: 300;
+    font-size: 1.1rem;
+    transition: var(--transition);
 }
 
 .contact-links a:hover {
@@ -286,20 +270,28 @@ section {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    border-top: 1px solid rgba(245, 245, 245, 0.1);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
     color: var(--light-text);
-    font-weight: 300;
+    border-top: 1px solid rgba(245, 245, 245, 0.05);
 }
 
-@media (max-width: 1000px) {
-    #hero, .split-section, .project-grid {
+@media (max-width: 900px) {
+    .split-section {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    .vertical-title {
-        display: none;
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 3rem;
+    }
+    #hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }

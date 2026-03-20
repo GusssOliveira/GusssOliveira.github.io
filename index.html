@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Oliveira | React & TypeScript</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,15 +53,6 @@
                     <p class="description">Atuação como estagiário de programação, focado no desenvolvimento e manutenção de software interno.</p>
                 </div>
 
-                <div id="languages" class="idiomas-nested">
-                    <h1>IDIOMAS</h1>
-                    <ul>
-                        <li>Inglês | Avançado</li>
-                        <li>Espanhol | Mediano</li>
-                        <li>Italiano | Básico</li>
-                    </ul>
-                </div>
-
             </div>
         </section>
 
@@ -70,7 +61,7 @@
             <div class="content-block">
                 <p class="timeline">BACHARELADO | Ciência da Computação</p>
                 <p class="institution">UnB - Universidade de Brasília</p>
-                <p class="description">Bacharelado em Ciência da Computação (Concluído). Além de me manter sempre atualizado com cursos intensivos online, estou sempre fazendo cursos e melhorando.</p>
+                <p class="description">Bacharelado em Ciência da Computação concluído. Além de me manter sempre atualizado com cursos intensivos online, estou sempre fazendo cursos e melhorando.</p>
                 
                 <h3 class="sub-heading">CURSOS INTENSIVOS</h3>
                 <ul class="interactive-list">
@@ -87,30 +78,44 @@
             <div class="projects-grid">
                 
                 <div class="project-card clickable-card" data-url="https://carmini.co/">
-                    <div class="carmini-img-container">
-                        <img src="imagens/imagens.png" alt="Carmini" class="img-default">
-                        <img src="imagens/PROHEADER.png" alt="Carmini Hover" class="img-hover">
-                    </div>
+                    <div class="card-image bg-carmini"></div>
                     <h3>Carmini</h3>
                     <p>E-commerce de skincare de luxo.</p>
                 </div>
 
                 <div class="project-card">
+                    <div class="github-icon-container">
+                        <svg viewBox="0 0 16 16" width="40" height="40" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+                    </div>
                     <h3>Em construção</h3>
                     <p>Projeto em desenvolvimento.</p>
                 </div>
 
                 <div class="project-card">
+                    <div class="github-icon-container">
+                        <svg viewBox="0 0 16 16" width="40" height="40" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+                    </div>
                     <h3>Em construção</h3>
                     <p>Projeto em desenvolvimento.</p>
                 </div>
 
             </div>
-            
-            <div class="portfolio-footer-graphic">
-                <img src="https://64.media.tumblr.com/2115e2a1242ccff91ef6750655d3443c/tumblr_mnydh5zjt11sutmfto3_r1_400.gifv" alt="Portfolio Graphic">
+
+            <div class="portfolio-gif-container">
+                <img src="https://64.media.tumblr.com/2115e2a1242ccff91ef6750655d3443c/tumblr_mnydh5zjt11sutmfto3_r1_400.gifv" alt="Portfolio Gif">
             </div>
-            
+
+        </section>
+
+        <section id="idiomas" class="split-section">
+            <h2 class="vertical-text">IDIOMAS</h2>
+            <div class="content-block">
+                <ul class="interactive-list">
+                    <li>Inglês | Avançado</li>
+                    <li>Espanhol | Mediano</li>
+                    <li>Italiano | Básico</li>
+                </ul>
+            </div>
         </section>
 
         <section id="contato">
