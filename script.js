@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const card = document.getElementById("card-carmini");
-    if (card) {
+    const cards = document.querySelectorAll(".clickable-card");
+
+    cards.forEach(card => {
         card.addEventListener("click", () => {
-            window.open("https://carmini.co/", "_blank");
+            const url = card.getAttribute("data-url");
+            if (url) {
+                window.open(url, "_blank");
+            }
         });
-    }
+    });
 });

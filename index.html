@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Oliveira | React & TypeScript</title>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,82 +22,115 @@
     </header>
 
     <main>
-        <section id="hero" class="square-block">
-            <div class="hero-image">
-                <img src="https://64.media.tumblr.com/95cc9aafffcbadf41508ea3cdd687f7a/tumblr_mnydh5zjt11sutmfto2_400.gifv" alt="Mewtwo">
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Gustavo Oliveira | Desenvolvedor Front-End | Especialista em React e TypeScript | Transformando ideias em interfaces funcionais e modernas</h1>
+                <p>Sou um desenvolvedor front-end com foco em React e TypeScript. Curto criar aplicações rápidas, funcionais e com código limpo. Especialista em React, entrego códigos limpos e funcionais que contribuem fundamentalmente para o sucesso da equipe.</p>
+                <p class="location">Localizado no Brasil 🌎</p>
             </div>
-            <div class="hero-content">
-                <h1>Gustavo Oliveira | Desenvolvedor Front-End | Especialista em React e TypeScript</h1>
-                <p>Sou um desenvolvedor front-end com foco em React e TypeScript. Curto criar aplicações rápidas, funcionais e com código limpo. Entrego resultados que contribuem para o sucesso da equipe.</p>
-                <p class="location">Brasília, Brasil 🌎</p>
+            <div class="hero-graphic">
+                <img src="https://64.media.tumblr.com/95cc9aafffcbadf41508ea3cdd687f7a/tumblr_mnydh5zjt11sutmfto2_400.gifv" alt="Hero Graphic">
             </div>
         </section>
 
-        <section id="experiencia" class="split-section square-block">
-            <h2 class="vertical-text">EXPERIÊNCIA</h2>
+        <section id="experiencia" class="split-section">
+            <h1 class="vertical-title">EXPERIÊNCIA</h1>
             <div class="content-block">
+                
                 <div class="job-item">
                     <p class="timeline">FREELANCER | 2023 - Atualmente</p>
-                    <p class="institution">Desenvolvimento Web</p>
-                    <p class="description">Criação de websites responsivos. Último projeto: site de grande escala (Carmini).</p>
+                    <p class="institution">Criação de Websites</p>
+                    <p class="description">Atuo como freelancer na criação de websites responsivos e modernos, utilizando React e TypeScript. Meu último projeto foi um site de grande escala.</p>
                 </div>
+
                 <div class="job-item">
-                    <p class="timeline">TST - Tribunal Superior do Trabalho | Estágio (2022 - 2025)</p>
-                    <p class="description">Desenvolvimento front-end com TypeScript e componentes dinâmicos.</p>
+                    <p class="timeline">TST - Tribunal Superior do Trabalho | Estágio (Out 2022 - Jan 2025)</p>
+                    <p class="description">Atuação no desenvolvimento front-end com foco em TypeScript, criando e mantendo componentes de interface dinâmicos para sistemas internos.</p>
                 </div>
+
                 <div class="job-item">
-                    <p class="timeline">AGU - Advocacia-Geral da União | Estágio (2018 - 2021)</p>
-                    <p class="description">Manutenção de software e suporte especializado em programação.</p>
+                    <p class="timeline">AGU - Advocacia-Geral da União | Estagiário de Programação (Jan 2018 - Jan 2021)</p>
+                    <p class="description">Atuação como estagiário de programação, focado no desenvolvimento e manutenção de software interno.</p>
                 </div>
-                <div class="idiomas-box">
-                    <h3>IDIOMAS</h3>
-                    <p>Inglês | Avançado</p>
-                    <p>Espanhol | Mediano</p>
-                    <p>Italiano | Básico</p>
+
+                <div id="languages" class="idiomas-nested">
+                    <h1>IDIOMAS <span class="header-graphic"><img src="https://64.media.tumblr.com/95cc9aafffcbadf41508ea3cdd687f7a/tumblr_mnydh5zjt11sutmfto2_400.gifv" alt="Icon"></span></h1>
+                    <ul>
+                        <li>Inglês | Avançado</li>
+                        <li>Espanhol | Mediano</li>
+                        <li>Italiano | Básico</li>
+                    </ul>
                 </div>
+
             </div>
         </section>
 
-        <section id="formacao" class="split-section square-block">
-            <h2 class="vertical-text">FORMAÇÃO</h2>
+        <section id="formacao" class="split-section">
+            <h1 class="vertical-title">FORMAÇÃO</h1>
             <div class="content-block">
-                <p class="institution">UnB - Universidade de Brasília</p>
-                <p class="description">Bacharelado em Ciência da Computação (em andamento).</p>
-                <div class="courses-list">
-                    <p>Cursos: Alura | Origamid | HTML & CSS (23h) | Python (4h)</p>
+                
+                <div class="education-block">
+                    <h1>BACHARELADO | Ciência da Computação <span class="header-graphic"><img src="https://64.media.tumblr.com/8d31c261e4963c6d64d1f21528c057b1/tumblr_inline_p4p6m1FzG91u8333s_500.gifv" alt="Icon"></span></h1>
+                    <p class="institution">UnB - Universidade de Brasília</p>
+                    <p class="education-description">Bacharelado em Ciência da Computação em andamento, complementado por cursos intensivos online.</p>
+                </div>
+                
+                <div class="courses">
+                    <p class="section-subtitle">CURSOS INTENSIVOS</p>
+                    <ul>
+                        <li>Alura</li>
+                        <li>Origamid</li>
+                        <li>HTML e CSS - 23h</li>
+                        <li>Python Módulos - 4h</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="square-block">
-            <h2 class="center-title">PORTFÓLIO</h2>
-            <div class="portfolio-container">
-                <div class="project-card" id="card-carmini">
-                    <div class="card-img-wrapper">
-                        <img src="imagens.png" alt="Carmini E-commerce">
-                    </div>
-                    <div class="card-info">
-                        <h3>Carmini</h3>
-                        <p>E-commerce de skincare de luxo</p>
-                    </div>
+        <section id="projetos">
+            <h1>PORTFÓLIO</h1>
+            <div class="project-grid">
+                
+                <div class="project-card clickable-card" data-url="https://carmini.co/">
+                    <h3>Carmini</h3>
+                    <p>E-commerce de skincare de luxo.</p>
                 </div>
-                <div class="portfolio-gif">
-                    <img src="https://64.media.tumblr.com/2115e2a1242ccff91ef6750655d3443c/tumblr_mnydh5zjt11sutmfto3_r1_400.gifv" alt="Decor">
+
+                <div class="project-card">
+                    <h3>Em breve</h3>
+                    <p>Projeto em desenvolvimento.</p>
                 </div>
+
+                <div class="project-card">
+                    <h3>Em breve</h3>
+                    <p>Projeto em desenvolvimento.</p>
+                </div>
+
             </div>
+            
+            <div class="portfolio-footer-graphic">
+                <img src="https://64.media.tumblr.com/2115e2a1242ccff91ef6750655d3443c/tumblr_mnydh5zjt11sutmfto3_r1_400.gifv" alt="Portfolio Graphic">
+            </div>
+
         </section>
 
-        <section id="contato" class="square-block">
-            <div class="contact-gif">
-                <img src="https://64.media.tumblr.com/6de2b6ad40ca2623a03f75ffe5b76301/tumblr_mnydh5zjt11sutmfto1_400.gifv" alt="Contact">
+        <section id="contato">
+            <div class="section-graphic contact-graphic">
+                <img src="https://64.media.tumblr.com/6de2b6ad40ca2623a03f75ffe5b76301/tumblr_mnydh5zjt11sutmfto1_400.gifv" alt="Contact Icon">
             </div>
-            <p class="cta">Disponível para novos projetos 👋</p>
-            <div class="links">
+            <div class="cta-text">
+                <p>Estou disponível para novos projetos no momento👋</p>
+            </div>
+            <div class="contact-links">
                 <a href="mailto:gustavodalosto2@gmail.com">gustavodalosto2@gmail.com</a>
                 <a href="https://instagram.com/gustavodalostoo" target="_blank">@gustavodalostoo</a>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>Gustavo Oliveira. Alguns Direitos Reservados</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
