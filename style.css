@@ -61,10 +61,6 @@ section h1:not(.vertical-title) {
     gap: 15px;
 }
 
-.header-graphic img {
-    max-width: 32px;
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -245,10 +241,6 @@ header nav a:hover {
     justify-content: center;
 }
 
-.project-grid.single-project {
-    grid-template-columns: minmax(300px, 600px);
-}
-
 .project-card {
     background-color: var(--card-color);
     padding: 30px;
@@ -302,7 +294,7 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -324,7 +316,7 @@ header nav a:hover {
 }
 
 .contact-graphic img {
-    max-width: 250px; /* Aumentado de 120px para 250px */
+    max-width: 250px;
     margin-bottom: 3rem;
 }
 
@@ -347,6 +339,9 @@ header nav a:hover {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .contact-links a:hover {
