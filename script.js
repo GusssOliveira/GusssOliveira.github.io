@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const projectCards = document.querySelectorAll(".project-card");
+    const clickableCards = document.querySelectorAll(".clickable-card");
 
-    projectCards.forEach(card => {
+    clickableCards.forEach(card => {
         card.addEventListener("click", () => {
-            const projectUrl = card.dataset.url;
-
-            if (projectUrl) {
-                window.open(projectUrl, "_blank");
+            const url = card.getAttribute("data-url");
+            if (url) {
+                window.open(url, "_blank");
             }
         });
     });
