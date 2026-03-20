@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Oliveira | React & TypeScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Gus.Oliveira</div>
+        <nav>
+            <ul>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-image">
+                <img src="https://64.media.tumblr.com/95cc9aafffcbadf41508ea3cdd687f7a/tumblr_mnydh5zjt11sutmfto2_400.gifv" alt="Mewtwo">
+            </div>
+            <div class="hero-content">
+                <h1>Desenvolvedor Front-End | Especialista em React e TypeScript | Transformando ideias em interfaces funcionais e modernas</h1>
+                <p>Sou um desenvolvedor front-end com foco em React e TypeScript. Curto criar aplicações rápidas, funcionais e com código limpo. Especialista em React, entrego códigos limpos e funcionais que contribuem fundamentalmente para o sucesso da equipe.</p>
+                <p class="location">Localizado no Brasil 🌎</p>
+            </div>
+        </section>
+
+        <section id="experiencia" class="split-section">
+            <h2 class="vertical-text">EXPERIÊNCIA</h2>
+            <div class="content-block">
+                
+                <div class="job-item">
+                    <p class="timeline">FREELANCER | 2023 - Atualmente</p>
+                    <p class="institution">Criação de Websites</p>
+                    <p class="description">Atuo como freelancer na criação de websites responsivos e modernos, utilizando React e TypeScript. Meu último projeto foi um site de grande escala.</p>
+                </div>
+
+                <div class="job-item">
+                    <p class="timeline">Suporte Técnico | Clínica de Olhos Dr. Gustavo Dias (Mar/2021 - Atualmente)</p>
+                    <p class="description">Suporte ao usuário, realizando manutenção de computadores, instalação de softwares e resolução de problemas de sistemas e rede.</p>
+                </div>
+
+                <div class="job-item">
+                    <p class="timeline">Aux. Administrativo/Tec. de Informática | Edivan Contabilidade (Mar/2017 - Ago/2020)</p>
+                    <p class="description">Suporte ao usuário, manutenção de hardware e software, gerenciamento de redes e servidores, além de rotinas administrativas e fiscais.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="formacao" class="split-section">
+            <h2 class="vertical-text">FORMAÇÃO</h2>
+            <div class="content-block">
+                <p class="timeline">BACHARELADO | Ciência da Computação</p>
+                <p class="institution">NOME DA FACULDADE</p>
+                <p class="description">Bacharelado em Ciência da Computação em andamento, complementado por cursos intensivos online.</p>
+                
+                <h3 class="sub-heading">CURSOS INTENSIVOS</h3>
+                <ul class="interactive-list">
+                    <li>HTML e CSS - 23h</li>
+                    <li>Python Módulos - 4h</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2 class="center-text">PORTFÓLIO</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card" data-project-id="rastreio">
+                    <div class="card-image bg-1">App Rastreio</div>
+                    <h3>Rastreamento Simplificado</h3>
+                    <p>Interface que conecta a uma API de correios.</p>
+                </div>
+
+                <div class="project-card" data-project-id="ecommerce">
+                    <div class="card-image bg-2">E-commerce</div>
+                    <h3>Clone de E-commerce Premium</h3>
+                    <p>Design de alta conversão responsivo.</p>
+                </div>
+
+                <div class="project-card" data-project-id="sitegrande">
+                    <div class="card-image bg-3">Site Grande</div>
+                    <h3>Website Institucional Grande</h3>
+                    <p>Projeto complexo de front-end.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="idiomas" class="split-section">
+            <h2 class="vertical-text">IDIOMAS</h2>
+            <div class="content-block">
+                <ul class="interactive-list">
+                    <li>Inglês | Avançado</li>
+                    <li>Espanhol | Básico</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato">
+            <p class="cta">Estou disponível para novos projetos no momento 👋</p>
+            <div class="contact-links">
+                <a href="mailto:seuemail@gmail.com">seuemail@gmail.com</a>
+                <a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Gustavo Oliveira. Alguns Direitos Reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
