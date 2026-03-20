@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".clickable-card");
+    const projectCards = document.querySelectorAll(".project-card");
 
-    cards.forEach(card => {
+    projectCards.forEach(card => {
         card.addEventListener("click", () => {
-            const url = card.getAttribute("data-url");
-            if (url) {
-                window.open(url, "_blank");
+            const projectUrl = card.dataset.url;
+
+            if (projectUrl) {
+                window.open(projectUrl, "_blank");
             }
         });
     });
