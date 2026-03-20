@@ -3,7 +3,7 @@
     --card-color: #1a1a1a;
     --text-color: #f5f5f5;
     --light-text: #6b6b6b;
-    --accent: #d3c3b1;
+    --accent: #d3c3b1; /* Dourado/Bege para detalhes */
     --font-heading: 'Lora', serif;
     --font-body: 'Montserrat', sans-serif;
     --transition: 0.3s ease;
@@ -35,21 +35,23 @@ ul {
     margin: 0;
 }
 
+/* Títulos verticais chiques */
 h1.vertical-title {
     font-family: var(--font-heading);
-    font-size: 10vw;
+    font-size: 10vw; /* Responsivo com base na largura da tela */
     font-weight: 700;
-    color: #e3d3c1;
+    color: #e3d3c1; /* Texto vertical bem claro */
     writing-mode: vertical-rl;
     text-align: right;
     margin: 0;
-    opacity: 0.1;
+    opacity: 0.1; /* Mantém a sutileza do Gavin */
 }
 
 section {
-    padding: 100px 50px;
+    padding: 100px 50px; /* Margem superior/inferior grande para cada seção */
 }
 
+/* Títulos de seção normais */
 section h1:not(.vertical-title) {
     font-family: var(--font-heading);
     font-size: 3rem !important;
@@ -62,14 +64,16 @@ section h1:not(.vertical-title) {
 }
 
 .header-graphic img {
-    max-width: 32px;
+    max-width: 32px; /* Mantém os gráficos de cabeçalho pequenos */
 }
 
+/* Layout de Grid para a página inteira */
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Uma única coluna */
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
@@ -90,9 +94,10 @@ header nav ul {
 }
 
 header nav a:hover {
-    color: var(--accent);
+    color: var(--accent); /* Cor de hover dourada */
 }
 
+/* Hero (Volta do Otávio) */
 #hero {
     display: flex;
     flex-direction: column;
@@ -131,6 +136,7 @@ header nav a:hover {
     margin-top: 1rem;
 }
 
+/* Experiência */
 #experiencia {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -164,6 +170,7 @@ header nav a:hover {
     color: var(--light-text);
 }
 
+/* Idiomas Integrados (Estilo Otávio) */
 .idiomas-nested {
     margin-top: 3rem;
     border-top: 1px solid rgba(245, 245, 245, 0.1);
@@ -171,7 +178,7 @@ header nav a:hover {
 }
 
 .idiomas-nested h1 {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem !important; /* Título pequeno igual ao do Otávio */
     letter-spacing: 2px;
     margin-bottom: 1rem;
     display: flex;
@@ -185,6 +192,7 @@ header nav a:hover {
     font-weight: 300;
 }
 
+/* Formação */
 #formacao {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -223,6 +231,7 @@ header nav a:hover {
     font-weight: 300;
 }
 
+/* Projetos */
 #projetos {
     display: grid;
     grid-template-columns: 1fr;
@@ -284,6 +293,14 @@ header nav a:hover {
     height: auto;
 }
 
+.construction-card {
+    background-color: #2a2a2a;
+}
+
+.construction-icon {
+    max-width: 100px;
+}
+
 .project-card h3 {
     font-family: var(--font-heading);
     font-size: 1.1rem;
@@ -297,6 +314,7 @@ header nav a:hover {
     font-weight: 300;
 }
 
+/* GIF do Portfólio (Corrigido e Grande) */
 .portfolio-footer-graphic.large-gif {
     margin-top: 2rem;
     display: flex;
@@ -313,18 +331,19 @@ header nav a:hover {
     border-radius: 4px;
 }
 
+/* Contato */
 #contato {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
-    background-color: var(--card-color);
+    background-color: var(--card-color); /* Seção de contato escura */
     color: var(--accent);
     align-items: center;
 }
 
 .contact-graphic img {
-    max-width: 120px;
+    max-width: 120px; /* Mantém os gráficos de cabeçalho pequenos */
     margin-bottom: 3rem;
 }
 
@@ -353,6 +372,7 @@ header nav a:hover {
     color: var(--accent);
 }
 
+/* Rodapé */
 footer {
     display: flex;
     justify-content: center;
@@ -363,6 +383,7 @@ footer {
     font-weight: 300;
 }
 
+/* Para telas menores */
 @media (max-width: 768px) {
     #hero, #experiencia, #formacao {
         grid-template-columns: 1fr;
