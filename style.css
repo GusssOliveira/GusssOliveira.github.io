@@ -61,6 +61,10 @@ section h1:not(.vertical-title) {
     gap: 15px;
 }
 
+.header-graphic img {
+    max-width: 32px;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -241,6 +245,10 @@ header nav a:hover {
     justify-content: center;
 }
 
+.project-grid.single-project {
+    grid-template-columns: minmax(300px, 600px);
+}
+
 .project-card {
     background-color: var(--card-color);
     padding: 30px;
@@ -271,9 +279,31 @@ header nav a:hover {
 
 .bg-carmini { background-color: #000; }
 
-.project-logo {
-    max-width: 100%;
-    height: auto;
+.hover-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.img-hover {
+    opacity: 0;
+}
+
+.hover-container:hover .img-default {
+    opacity: 0;
+}
+
+.hover-container:hover .img-hover {
+    opacity: 1;
 }
 
 .project-card h3 {
@@ -294,7 +324,7 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -316,7 +346,7 @@ header nav a:hover {
 }
 
 .contact-graphic img {
-    max-width: 250px;
+    max-width: 120px;
     margin-bottom: 3rem;
 }
 
@@ -339,9 +369,6 @@ header nav a:hover {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 300;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .contact-links a:hover {
