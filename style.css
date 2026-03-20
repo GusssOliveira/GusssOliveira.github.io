@@ -261,16 +261,12 @@ header nav a:hover {
 }
 
 .card-image {
-    height: 180px;
     background-color: #222;
     border-radius: 4px;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    color: rgba(245, 245, 245, 0.3);
     overflow: hidden;
 }
 
@@ -279,9 +275,7 @@ header nav a:hover {
 .project-logo {
     display: block;
     width: 100%;
-    max-width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 .project-card h3 {
