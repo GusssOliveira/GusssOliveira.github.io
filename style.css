@@ -61,6 +61,10 @@ section h1:not(.vertical-title) {
     gap: 15px;
 }
 
+.header-graphic img {
+    max-width: 32px;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -271,6 +275,35 @@ header nav a:hover {
 
 .bg-carmini { background-color: #000; }
 
+.hover-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.img-hover {
+    opacity: 0;
+}
+
+.hover-container:hover .img-default {
+    opacity: 0;
+}
+
+.hover-container:hover .img-hover {
+    opacity: 1;
+}
+
 .project-logo {
     max-width: 100%;
     height: auto;
@@ -316,7 +349,7 @@ header nav a:hover {
 }
 
 .contact-graphic img {
-    max-width: 250px;
+    max-width: 350px;
     margin-bottom: 3rem;
 }
 
