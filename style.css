@@ -136,6 +136,15 @@ header nav a:hover {
     grid-template-columns: auto 1fr;
     align-items: start;
     gap: 50px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#experiencia h1:not(.vertical-title), 
+#experiencia .institution, 
+#experiencia .description,
+#experiencia .idiomas-nested ul li {
+    color: #000000;
 }
 
 .job-item {
@@ -146,14 +155,13 @@ header nav a:hover {
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--accent);
+    color: #d3c3b1;
 }
 
 .institution {
     font-family: var(--font-heading);
     font-size: 2rem !important;
     margin-bottom: 1rem;
-    color: var(--text-color);
 }
 
 .description {
@@ -161,12 +169,11 @@ header nav a:hover {
     max-width: 800px;
     margin-bottom: 2rem;
     font-weight: 300;
-    color: var(--light-text);
 }
 
 .idiomas-nested {
     margin-top: 3rem;
-    border-top: 1px solid rgba(245, 245, 245, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 2rem;
 }
 
@@ -207,7 +214,12 @@ header nav a:hover {
     max-width: 800px;
     margin-bottom: 2rem;
     font-weight: 300;
-    color: var(--light-text);
+    color: var(--text-color);
+}
+
+.education-description strong {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .section-subtitle {
@@ -221,6 +233,7 @@ header nav a:hover {
     font-size: 1rem;
     margin-bottom: 15px;
     font-weight: 300;
+    color: var(--text-color);
 }
 
 #projetos {
@@ -261,6 +274,7 @@ header nav a:hover {
 }
 
 .card-image {
+    height: 180px;
     background-color: #222;
     border-radius: 4px;
     margin-bottom: 1.5rem;
@@ -275,7 +289,9 @@ header nav a:hover {
 .project-logo {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .project-card h3 {
@@ -341,9 +357,6 @@ header nav a:hover {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 300;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .contact-links a:hover {
